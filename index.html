@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <main>
+        <!-- Formulario-->
+        <form name="contact" method="POST"  data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+
+            <p hidden > 
+                <label> No llenar <input name="bot-field"></label>
+            </p>
+              <!-- Primer label e input -->
+            <div class="campo">
+                <label for="nombre">Name</label>
+                <input type="text" placeholder="Enter your name" id="nombre" name="nombre" required>
+
+            </div>
+  <!--segundo label e input -->
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Enter your email addess" id="email" name="email" required>
+
+            </div>
+              <!-- Tercero label e input -->
+            <div class="campo">
+                <label for="telefono">Phone</label>
+                <input type="tel" placeholder="Enter your phone number" id="telefono" name="telefono" required>
+
+            </div>
+              <!-- Cuarto label e input -->
+            <div class="campo">
+                <label for="mensaje">Message</label>
+                <textarea placeholder="Your menssage here" id="mensaje" name="mensaje"  required></textarea>
+
+            </div>
+              <!-- Boton de enviar -->
+            <button class="btn" type="submit">Enviar</button>
+        </form>
+    </main>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
