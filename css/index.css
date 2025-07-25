@@ -1,65 +1,125 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-main{
+/*Contenido del main*/
+main {
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
+    background-image: url(/img/ai-generated-7767321_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
 }
-form{
+
+/* Contenedor del Formulario */
+form {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    width: 60%;
-    height: 400px;
+    width: 90%;
+    height: auto;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 1px 1px rgba(60, 60, 60, 0.2);
-    gap: 10px;
+    overflow: scroll;
+    min-width: 370px;
+    background: transparent;
+    backdrop-filter: blur(4px);
 }
-.campo{
+
+legend {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 10px;
+    font-size: 20px;
+}
+
+/* Contenedor de todos los label e inputs */
+.campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
     display: flex;
     justify-content: left;
     flex-direction: column;
-    gap: 10px;
+    margin: 10px;
+
 }
-label{
+/*  Contenido de los label*/
+label {
     font-weight: bold;
+    width: 90%;
+    color: white;
 }
-input{
-    width: 200px;
-    height: 20px;
+/* Tamaño de los inputs*/
+input {
+    width: 90%;
+    height: 25px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
     outline: none;
-   font-size: 15px;
+    font-size: 15px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+}
+/* input textarea*/
+textarea {
+    width: 90%;
+    height: 70px;
+    outline: none;
+    margin: 10px;
+    font-size: 15px;
+     background-color: transparent;
+         border: 1px solid rgb(255, 255, 255);
+         color: white;
+
 }
 
-textarea{
-    width: 200px;
-    height: 70px; 
-    outline: none;
-}
-
-.btn{
-    width: 200px;
+/* Boton de envio del formulario */
+.btn {
+    width: 240px;
     height: 40px;
     background-color: rgb(71, 159, 252);
+    color: white;
     border: none;
     border-radius: 4px;
     box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
-@media (min-width: 1200px) {
- form{
-    width: 25%;
- }
+/* Tamño de Pantallas tablest*/
+
+@media (min-width: 768px) {
+     form {
+        width: 90%;
+    }
+
+    .btn {
+        width: 40%;
+    }
+
+}
+
+/* Tamño de Pantallas grandes*/
+@media (min-width: 1224px) {
+    form {
+        width: 45%;
+    }
+
+    .btn {
+        width: 40%;
+      
+    }
 }
