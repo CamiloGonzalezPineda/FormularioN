@@ -112,6 +112,18 @@ textarea {
 
 }
 
+.red{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 20px;
+}
 /* Tamño de Pantallas grandes*/
 @media (min-width: 1224px) {
     form {
