@@ -1,15 +1,15 @@
 const formulario = document.querySelector('form')
 const btn = document.querySelector('.btn')
 const inputs = document.querySelectorAll('.texto')
-
+const alerta = document.querySelector('.alerta')
 window.addEventListener('pageshow', () => {
     formulario.reset()
 })
 
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', (e) => {
    
-
+e.preventDefault()
     let mostrar = false
 
     const mostraE = document.querySelector('.red')
@@ -29,11 +29,13 @@ btn.addEventListener('click', () => {
         tex.textContent = "Completa los campos" // le agrega texto al parrafo 
 
         ale.appendChild(tex) // crea los bottones 
-        formulario.appendChild(ale) // cre el boton
+        alerta.appendChild(ale) // agrega el botton en la parte de arriiba 
 
         setTimeout(() => {
             ale.remove()
         }, 1000);
+    }else{
+        formulario.submit()
     }
 
 })

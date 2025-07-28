@@ -112,12 +112,18 @@ textarea {
 
 }
 
+.alerta{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 10px;
+}
 .red{
     display: flex;
     justify-content: center;
-
     align-items: center;
-    width: 400px;
+    width: 90%;
     height: 40px;
     background-color: red;
     border-radius: 4px;
