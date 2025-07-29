@@ -26,7 +26,7 @@ e.preventDefault()
         const ale = document.createElement('div') // crea un div 
         ale.classList.add('red') // da un clase al div
         const tex = document.createElement('p') // crea un parrafo 
-        tex.textContent = "Completa los campos" // le agrega texto al parrafo 
+        tex.textContent = "Fill in the empty field" // le agrega texto al parrafo 
 
         ale.appendChild(tex) // crea los bottones 
         alerta.appendChild(ale) // agrega el botton en la parte de arriiba 

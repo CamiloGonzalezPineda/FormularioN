@@ -8,7 +8,7 @@ main {
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    background-image: url(/img/ai-generated-7767321_1920.jpg);
+    background-image: url(/img/imagen1.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,11 +29,11 @@ form {
     width: 90%;
     height: auto;
     background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 1px 1px rgba(60, 60, 60, 0.2);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
     overflow: scroll;
     min-width: 370px;
     background: transparent;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
 }
 
 legend {
@@ -97,6 +97,8 @@ textarea {
     box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
     font-size: 20px;
+       cursor: pointer;
+
 }
 
 /* Tamño de Pantallas tablest*/
@@ -129,6 +131,7 @@ textarea {
     border-radius: 4px;
     color: white;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 /* Tamño de Pantallas grandes*/
 @media (min-width: 1224px) {
