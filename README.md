@@ -5,7 +5,7 @@ Está pensado para ser moderno, responsive y fácil de integrar en cualquier pro
 El procesamiento y almacenamiento de envíos se gestiona mediante **Netlify Forms**, que actúa como servicio backend serverless.
 
 Accede al sitio en producción aquí:  
-[https://camilogonzalezpineda.github.io/LinkMe/]([https://camilogonzalezpineda.github.io/LinkMe/](https://formularioinf.netlify.app)])
+https://formularioinf.netlify.app
 
 ## Características
 
